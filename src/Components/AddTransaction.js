@@ -79,7 +79,7 @@ const AddTransaction = () => {
             fullWidth
             value={transactionName}
             inputProps={{ maxLength: 25 }}
-            label='Enter Transaction Name'
+            label='Transaction Name'
           />
         </Grid>
         <Grid item xs={4}>
