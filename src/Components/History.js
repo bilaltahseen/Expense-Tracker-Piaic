@@ -68,7 +68,14 @@ const History = () => {
             }}
             className={classes.paper}
           >
-            <p>{elem.transactionName}</p>
+            <p
+              style={{
+                textDecoration:
+                  elem.transactionId === keys ? ' line-through' : 'none',
+              }}
+            >
+              {elem.transactionName}
+            </p>
             <span>
               {elem.transactionAmount < 0
                 ? `- $ ${elem.transactionAmount.toString().slice(1)}`
